@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from keras.optimizers import *
 from keras.callbacks import ModelCheckpoint,EarlyStopping, ReduceLROnPlateau
 from utilities.datareader import datareader
-from model.thesis import irisAttention
+from model.iris_detetction_model import irisAttention
 
 dtreader = datareader(train_state=True)
 valdtreader = datareader(train_state=False)
