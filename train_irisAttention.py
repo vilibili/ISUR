@@ -32,7 +32,7 @@ class loss_history(keras.callbacks.Callback):
         bbox[1] = bbox[1] * 256
         bbox[2] = bbox[2] * 256
         bbox[3] = bbox[3] * 256
-        image = valdtreader.images[self.x]
+        image = imageio.imread(os.path.join(r'dataset/images/'+valdtreader.imagelist[self.x].split(" ")[0]+'.jpeg'),as_gray=False, pilmode="RGB")
         cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[2], bbox[3]), (0, 0, 255), 2)
         cv2.rectangle(image,
                       (int(valdtreader.bboxes[self.x, 0, 0, 0] * 256), int(valdtreader.bboxes[self.x, 0, 0, 1] * 256)),
