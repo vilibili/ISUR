@@ -19,10 +19,10 @@ class datareader:
 
         if train_state :
             path = train_file
-            self.attPath = r'dataset/irisAtten/thesis'
+            self.attPath = r'dataset/irisAtten'
         else:
             path = val_file
-            self.attPath = r'dataset/irisAtten/thesis'
+            self.attPath = r'dataset/irisAtten'
         self.image_path = image_path
         self.mask_path = mask_path
         self.imagelist = self.get_image_list(path)
