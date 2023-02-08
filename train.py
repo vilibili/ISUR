@@ -65,23 +65,3 @@ r = model.fit(x=[dtreader.images, dtreader.AttMasks],
               verbose=1,
               batch_size=2,
               shuffle=True)
-
-plt.plot(r.history['loss'])
-plt.plot(r.history['val_loss'])
-plt.title('Model Loss')
-plt.ylabel('Loss')
-plt.xlabel('epochs')
-plt.legend(['Training','Validation'],loc='upper left')
-plt.savefig(r'statistic\ISUR\seg_model\CASIA_distance\loss_seg_model_CASIA_distance_batch2.jpeg')
-plt.show()
-
-plt.plot(r.history['acc'])
-plt.plot(r.history['val_acc'])
-plt.title('Accuracy')
-plt.ylabel('Accuracy')
-plt.xlabel('epochs')
-plt.legend(['Training','Validation'],loc='upper left')
-plt.savefig(r'statistic\ISUR\seg_model\CASIA_distance\Accuracy_seg_model_CASIA_distance_batch2.jpeg')
-plt.show()
-
-np.save(r'statistic\ISUR\seg_model\CASIA_distance\seg_model_CASIA_distance_batch2.npy',r.history)
