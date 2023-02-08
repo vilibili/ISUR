@@ -3,6 +3,16 @@
 This is an implementation of ISUR using keras.
 (https://ieeexplore.ieee.org/abstract/document/9721475)
 
+image size: 256*256
+
+annotations:
+CASIA IRIS distance
+train: https://github.com/vilibili/ISUR/blob/main/dataset/CASIA-iris-distance_detection_train.txt
+validation: https://github.com/vilibili/ISUR/blob/main/dataset/CASIA-iris-distance_detection_val.txt
+
+UBIRIS 
+train: https://github.com/vilibili/ISUR/blob/main/dataset/UBIRIS_detection_train.txt
+validation: https://github.com/vilibili/ISUR/blob/main/dataset/UBIRIS_detection_val.txt
 
 please cite our paper in your paper if you use annotations or code.
 
