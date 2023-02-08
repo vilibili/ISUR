@@ -5,7 +5,7 @@ This is an implementation of ISUR using keras.
 
 image size: 256*256
 
--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 annotations:
 
@@ -20,6 +20,8 @@ UBIRIS
 train: https://github.com/vilibili/ISUR/blob/main/dataset/UBIRIS_detection_train.txt
 
 validation: https://github.com/vilibili/ISUR/blob/main/dataset/UBIRIS_detection_val.txt
+
+-------------------------------------------------------------------------------------------------------------------------------------
 
 please cite our paper in your paper if you use annotations or code.
 
