@@ -8,7 +8,6 @@ image size: 256*256
 annotations:
 
 CASIA IRIS distance
-
 train: https://github.com/vilibili/ISUR/blob/main/dataset/CASIA-iris-distance_detection_train.txt
 
 validation: https://github.com/vilibili/ISUR/blob/main/dataset/CASIA-iris-distance_detection_val.txt
