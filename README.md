@@ -3,7 +3,7 @@
 This is an implementation of ISUR using keras.
 (https://ieeexplore.ieee.org/abstract/document/9721475)
 
-images and masks
+images and masks:
 
 Put images and maks in dataset/images and dataset/masks
 
