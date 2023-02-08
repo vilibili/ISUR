@@ -60,23 +60,3 @@ r = model.fit(x=dtreader.images,
               verbose=1,
               batch_size=2,
               shuffle=True)
-
-plt.plot(r.history['loss'])
-plt.plot(r.history['val_loss'])
-plt.title('Model Loss')
-plt.ylabel('Loss')
-plt.xlabel('epochs')
-plt.legend(['Training','Validation'],loc='upper left')
-plt.savefig(r'statistic\ISUR\irisAttention\CASIA-iris-distance\loss_irisAttention_CASIA-iris-distance.jpeg')
-plt.show()
-
-plt.plot(r.history['acc'])
-plt.plot(r.history['val_acc'])
-plt.title('Accuracy')
-plt.ylabel('Accuracy')
-plt.xlabel('epochs')
-plt.legend(['Training','Validation'],loc='upper left')
-plt.savefig(r'statistic\ISUR\irisAttention\CASIA-iris-distance\Accuracy_irisAttention_CASIA-iris-distance.jpeg')
-plt.show()
-
-np.save(r'statistic\ISUR\irisAttention\CASIA-iris-distance\irisAttention_CASIA-iris-distance.npy',r.history)
